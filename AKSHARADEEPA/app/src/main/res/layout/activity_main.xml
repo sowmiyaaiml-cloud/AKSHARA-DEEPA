@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📚 Akshara-Deepa Tutor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#00695C"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/dailyGoalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Today's Goal: 0/1"
+        android:background="#E0F2F1"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overall Progress: 0%"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:id="@+id/overallProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginVertical="8dp"
+        android:progressTint="#4CAF50"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginVertical="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/quizBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📝 Daily Quiz"
+            android:backgroundTint="#FF5722"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/strengthBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🕸️ Strength Map"
+            android:backgroundTint="#009688"/>
+    </LinearLayout>
+</LinearLayout>
